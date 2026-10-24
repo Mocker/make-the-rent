@@ -1,0 +1,260 @@
+{
+ "name": "alex",
+ "canvas": [
+  1920,
+  1600
+ ],
+ "motions": [
+  "bind"
+ ],
+ "layers": [
+  {
+   "id": "leg_L",
+   "src": "layers/leg_L.png",
+   "pivot": [
+    866.0,
+    875.0
+   ],
+   "parent": "torso"
+  },
+  {
+   "id": "leg_R",
+   "src": "layers/leg_R.png",
+   "pivot": [
+    1066.0,
+    875.0
+   ],
+   "parent": "torso"
+  },
+  {
+   "id": "shoe_L",
+   "src": "layers/shoe_L.png",
+   "pivot": [
+    855.0,
+    1405.0
+   ],
+   "parent": "leg_L"
+  },
+  {
+   "id": "shoe_R",
+   "src": "layers/shoe_R.png",
+   "pivot": [
+    1077.0,
+    1405.0
+   ],
+   "parent": "leg_R"
+  },
+  {
+   "id": "torso",
+   "src": "layers/torso.png",
+   "pivot": [
+    966.0,
+    925.0
+   ]
+  },
+  {
+   "id": "neck",
+   "src": "layers/neck.png",
+   "pivot": [
+    966.0,
+    460.0
+   ],
+   "parent": "torso"
+  },
+  {
+   "id": "face",
+   "src": "layers/face.png",
+   "pivot": [
+    966.0,
+    460.0
+   ],
+   "parent": "torso"
+  },
+  {
+   "id": "ear_r",
+   "src": "layers/ear_r.png",
+   "pivot": [
+    793.7,
+    329.8
+   ],
+   "parent": "face"
+  },
+  {
+   "id": "ear_l",
+   "src": "layers/ear_l.png",
+   "pivot": [
+    1137.4,
+    330.3
+   ],
+   "parent": "face"
+  },
+  {
+   "id": "hair",
+   "src": "layers/hair.png",
+   "pivot": [
+    966.0,
+    460.0
+   ],
+   "parent": "face"
+  },
+  {
+   "id": "eye_r",
+   "src": "layers/eye_r.png",
+   "pivot": [
+    889.3,
+    313.8
+   ],
+   "parent": "face"
+  },
+  {
+   "id": "eye_l",
+   "src": "layers/eye_l.png",
+   "pivot": [
+    1040.0,
+    313.5
+   ],
+   "parent": "face"
+  },
+  {
+   "id": "upper_arm_r",
+   "src": "layers/upper_arm_r.png",
+   "pivot": [
+    716.0,
+    520.0
+   ],
+   "parent": "torso"
+  },
+  {
+   "id": "forearm_r",
+   "src": "layers/forearm_r.png",
+   "pivot": [
+    444.0,
+    634.0
+   ],
+   "parent": "upper_arm_r"
+  },
+  {
+   "id": "hand_r",
+   "src": "layers/hand_r.png",
+   "pivot": [
+    273.0,
+    803.0
+   ],
+   "parent": "forearm_r"
+  },
+  {
+   "id": "upper_arm_l",
+   "src": "layers/upper_arm_l.png",
+   "pivot": [
+    1216.0,
+    520.0
+   ],
+   "parent": "torso"
+  },
+  {
+   "id": "forearm_l",
+   "src": "layers/forearm_l.png",
+   "pivot": [
+    1425.5,
+    801.0
+   ],
+   "parent": "upper_arm_l"
+  },
+  {
+   "id": "hand_l",
+   "src": "layers/hand_l.png",
+   "pivot": [
+    1549.0,
+    1016.0
+   ],
+   "parent": "forearm_l"
+  }
+ ],
+ "parameters": {
+  "breath": {
+   "default": 0.0,
+   "min": -1.0,
+   "max": 1.0
+  },
+  "tilt": {
+   "default": 0.0,
+   "min": -1.0,
+   "max": 1.0
+  },
+  "shoulder_r": {
+   "default": 0.0,
+   "min": -1.0,
+   "max": 1.0
+  },
+  "elbow_r": {
+   "default": 0.0,
+   "min": -1.0,
+   "max": 1.0
+  },
+  "shoulder_l": {
+   "default": 0.0,
+   "min": -1.0,
+   "max": 1.0
+  },
+  "elbow_l": {
+   "default": 0.0,
+   "min": -1.0,
+   "max": 1.0
+  },
+  "eyes_shut": {
+   "default": 0.0,
+   "min": 0.0,
+   "max": 1.0
+  }
+ },
+ "bindings": [
+  {
+   "target": "layer:torso",
+   "param": "breath",
+   "op": "scale_y",
+   "scale": 0.03
+  },
+  {
+   "target": "layer:face",
+   "param": "tilt",
+   "op": "rotate",
+   "scale": 6.0
+  },
+  {
+   "target": "layer:upper_arm_r",
+   "param": "shoulder_r",
+   "op": "rotate",
+   "scale": 55.0
+  },
+  {
+   "target": "layer:forearm_r",
+   "param": "elbow_r",
+   "op": "rotate",
+   "scale": -50.0
+  },
+  {
+   "target": "layer:upper_arm_l",
+   "param": "shoulder_l",
+   "op": "rotate",
+   "scale": -55.0
+  },
+  {
+   "target": "layer:forearm_l",
+   "param": "elbow_l",
+   "op": "rotate",
+   "scale": 50.0
+  },
+  {
+   "target": "layer:eye_r",
+   "param": "eyes_shut",
+   "op": "scale",
+   "scale": -0.95
+  },
+  {
+   "target": "layer:eye_l",
+   "param": "eyes_shut",
+   "op": "scale",
+   "scale": -0.95
+  }
+ ]
+}

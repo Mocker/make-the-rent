@@ -1,0 +1,1321 @@
+{
+ "rig_dir": "/home/hatch/workspace/zoud-gamelab/assets/character/rig_alex",
+ "canvas": [
+  1920,
+  1600
+ ],
+ "motions": [
+  "stress"
+ ],
+ "per_motion_hole_px": {
+  "stress": 12406
+ },
+ "jobs": [
+  {
+   "id": "hole_001",
+   "size_px": 361,
+   "tier": 2,
+   "bbox": [
+    720,
+    705,
+    780,
+    727
+   ],
+   "crop_box": [
+    691,
+    682,
+    810,
+    763
+   ],
+   "fill_size_px": 568,
+   "frames": [
+    [
+     "stress",
+     0
+    ]
+   ],
+   "owner_layer": "torso",
+   "owner_ring_coverage": 1.0,
+   "owner_ratio": 0.0018,
+   "owner_disp_px": 6.2,
+   "owner_is_cover_trailing": true,
+   "material_std": 67.7,
+   "ring_std": 67.7,
+   "prompt_hint": "missing surface of the 'torso' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "agent-submit-baked",
+    "owner_layer": "torso"
+   }
+  },
+  {
+   "id": "hole_002",
+   "size_px": 266,
+   "tier": 1,
+   "bbox": [
+    832,
+    212,
+    902,
+    248
+   ],
+   "crop_box": [
+    811,
+    210,
+    911,
+    288
+   ],
+   "fill_size_px": 233,
+   "frames": [
+    [
+     "stress",
+     0
+    ],
+    [
+     "stress",
+     1
+    ],
+    [
+     "stress",
+     2
+    ],
+    [
+     "stress",
+     3
+    ]
+   ],
+   "owner_layer": "hair",
+   "owner_ring_coverage": 0.845,
+   "owner_ratio": 0.0041,
+   "owner_disp_px": 25.2,
+   "owner_is_cover_trailing": true,
+   "material_std": 7.3,
+   "ring_std": 31.3,
+   "prompt_hint": "missing surface of the 'hair' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": null,
+   "rejected": {
+    "reason": "fill left holes beyond residue on the full recount \u2014 region behaves as a background gap, not missing surface",
+    "hole_px_left": 9
+   }
+  },
+  {
+   "id": "hole_003",
+   "size_px": 240,
+   "tier": 1,
+   "bbox": [
+    904,
+    132,
+    1001,
+    146
+   ],
+   "crop_box": [
+    875,
+    126,
+    1060,
+    199
+   ],
+   "fill_size_px": 338,
+   "frames": [
+    [
+     "stress",
+     0
+    ],
+    [
+     "stress",
+     1
+    ],
+    [
+     "stress",
+     2
+    ],
+    [
+     "stress",
+     3
+    ]
+   ],
+   "owner_layer": "hair",
+   "owner_ring_coverage": 1.0,
+   "owner_ratio": 0.0037,
+   "owner_disp_px": 29.5,
+   "owner_is_cover_trailing": true,
+   "material_std": 17.7,
+   "ring_std": 17.7,
+   "prompt_hint": "missing surface of the 'hair' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": null,
+   "rejected": {
+    "reason": "fill left holes beyond residue on the full recount \u2014 region behaves as a background gap, not missing surface",
+    "hole_px_left": 16
+   }
+  },
+  {
+   "id": "hole_004",
+   "size_px": 163,
+   "tier": 1,
+   "bbox": [
+    1148,
+    708,
+    1175,
+    733
+   ],
+   "crop_box": [
+    1119,
+    685,
+    1205,
+    769
+   ],
+   "fill_size_px": 304,
+   "frames": [
+    [
+     "stress",
+     3
+    ]
+   ],
+   "owner_layer": "torso",
+   "owner_ring_coverage": 1.0,
+   "owner_ratio": 0.0008,
+   "owner_disp_px": 6.1,
+   "owner_is_cover_trailing": true,
+   "material_std": 67.7,
+   "ring_std": 67.7,
+   "prompt_hint": "missing surface of the 'torso' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "torso"
+   }
+  },
+  {
+   "id": "hole_005",
+   "size_px": 159,
+   "tier": 1,
+   "bbox": [
+    1022,
+    435,
+    1051,
+    456
+   ],
+   "crop_box": [
+    993,
+    413,
+    1078,
+    494
+   ],
+   "fill_size_px": 256,
+   "frames": [
+    [
+     "stress",
+     2
+    ]
+   ],
+   "owner_layer": "face",
+   "owner_ring_coverage": 0.982,
+   "owner_ratio": 0.002,
+   "owner_disp_px": 7.1,
+   "owner_is_cover_trailing": true,
+   "material_std": 47.8,
+   "ring_std": 48.7,
+   "prompt_hint": "missing surface of the 'face' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": null,
+   "rejected": {
+    "reason": "fill left holes beyond residue on the full recount \u2014 region behaves as a background gap, not missing surface",
+    "hole_px_left": 48
+   }
+  },
+  {
+   "id": "hole_006",
+   "size_px": 145,
+   "tier": 1,
+   "bbox": [
+    1096,
+    221,
+    1136,
+    257
+   ],
+   "crop_box": [
+    1055,
+    206,
+    1185,
+    321
+   ],
+   "fill_size_px": 324,
+   "frames": [
+    [
+     "stress",
+     0
+    ],
+    [
+     "stress",
+     1
+    ],
+    [
+     "stress",
+     2
+    ],
+    [
+     "stress",
+     3
+    ]
+   ],
+   "owner_layer": "hair",
+   "owner_ring_coverage": 0.999,
+   "owner_ratio": 0.0023,
+   "owner_disp_px": 18.5,
+   "owner_is_cover_trailing": true,
+   "material_std": 11.0,
+   "ring_std": 11.0,
+   "prompt_hint": "missing surface of the 'hair' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "hair"
+   }
+  },
+  {
+   "id": "hole_007",
+   "size_px": 143,
+   "tier": 1,
+   "bbox": [
+    886,
+    441,
+    910,
+    458
+   ],
+   "crop_box": [
+    858,
+    418,
+    940,
+    496
+   ],
+   "fill_size_px": 228,
+   "frames": [
+    [
+     "stress",
+     0
+    ]
+   ],
+   "owner_layer": "face",
+   "owner_ring_coverage": 0.968,
+   "owner_ratio": 0.0018,
+   "owner_disp_px": 7.1,
+   "owner_is_cover_trailing": true,
+   "material_std": 48.9,
+   "ring_std": 51.0,
+   "prompt_hint": "missing surface of the 'face' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": null,
+   "rejected": {
+    "reason": "fill left holes beyond residue on the full recount \u2014 region behaves as a background gap, not missing surface",
+    "hole_px_left": 5
+   }
+  },
+  {
+   "id": "hole_008",
+   "size_px": 102,
+   "tier": 1,
+   "bbox": [
+    1064,
+    159,
+    1078,
+    205
+   ],
+   "crop_box": [
+    1035,
+    152,
+    1108,
+    256
+   ],
+   "fill_size_px": 226,
+   "frames": [
+    [
+     "stress",
+     1
+    ]
+   ],
+   "owner_layer": "hair",
+   "owner_ring_coverage": 0.951,
+   "owner_ratio": 0.0016,
+   "owner_disp_px": 22.3,
+   "owner_is_cover_trailing": true,
+   "material_std": 10.5,
+   "ring_std": 12.7,
+   "prompt_hint": "missing surface of the 'hair' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "hair"
+   }
+  },
+  {
+   "id": "hole_009",
+   "size_px": 100,
+   "tier": 1,
+   "bbox": [
+    1093,
+    1450,
+    1112,
+    1456
+   ],
+   "crop_box": [
+    1064,
+    1406,
+    1142,
+    1471
+   ],
+   "fill_size_px": 158,
+   "frames": [
+    [
+     "stress",
+     0
+    ],
+    [
+     "stress",
+     1
+    ],
+    [
+     "stress",
+     2
+    ],
+    [
+     "stress",
+     3
+    ]
+   ],
+   "owner_layer": "shoe_R",
+   "owner_ring_coverage": 1.0,
+   "owner_ratio": 0.004,
+   "owner_disp_px": 15.8,
+   "owner_is_cover_trailing": true,
+   "material_std": 52.2,
+   "ring_std": 52.2,
+   "prompt_hint": "missing surface of the 'shoe_R' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "shoe_R"
+   }
+  },
+  {
+   "id": "hole_010",
+   "size_px": 94,
+   "tier": 1,
+   "bbox": [
+    820,
+    1448,
+    839,
+    1455
+   ],
+   "crop_box": [
+    791,
+    1404,
+    869,
+    1470
+   ],
+   "fill_size_px": 155,
+   "frames": [
+    [
+     "stress",
+     0
+    ],
+    [
+     "stress",
+     1
+    ],
+    [
+     "stress",
+     2
+    ],
+    [
+     "stress",
+     3
+    ]
+   ],
+   "owner_layer": "shoe_L",
+   "owner_ring_coverage": 1.0,
+   "owner_ratio": 0.0037,
+   "owner_disp_px": 15.8,
+   "owner_is_cover_trailing": true,
+   "material_std": 52.0,
+   "ring_std": 52.0,
+   "prompt_hint": "missing surface of the 'shoe_L' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "shoe_L"
+   }
+  },
+  {
+   "id": "hole_011",
+   "size_px": 73,
+   "tier": 1,
+   "bbox": [
+    1079,
+    169,
+    1090,
+    209
+   ],
+   "crop_box": [
+    1036,
+    156,
+    1108,
+    254
+   ],
+   "fill_size_px": 187,
+   "frames": [
+    [
+     "stress",
+     3
+    ]
+   ],
+   "owner_layer": "hair",
+   "owner_ring_coverage": 1.0,
+   "owner_ratio": 0.0011,
+   "owner_disp_px": 20.9,
+   "owner_is_cover_trailing": true,
+   "material_std": 12.3,
+   "ring_std": 12.3,
+   "prompt_hint": "missing surface of the 'hair' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "hair"
+   }
+  },
+  {
+   "id": "hole_012",
+   "size_px": 69,
+   "tier": 1,
+   "bbox": [
+    1093,
+    175,
+    1101,
+    213
+   ],
+   "crop_box": [
+    1036,
+    156,
+    1107,
+    251
+   ],
+   "fill_size_px": 180,
+   "frames": [
+    [
+     "stress",
+     2
+    ]
+   ],
+   "owner_layer": "hair",
+   "owner_ring_coverage": 1.0,
+   "owner_ratio": 0.0011,
+   "owner_disp_px": 27.9,
+   "owner_is_cover_trailing": true,
+   "material_std": 9.1,
+   "ring_std": 9.1,
+   "prompt_hint": "missing surface of the 'hair' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "hair"
+   }
+  },
+  {
+   "id": "hole_013",
+   "size_px": 49,
+   "tier": 1,
+   "bbox": [
+    1040,
+    164,
+    1052,
+    191
+   ],
+   "crop_box": [
+    1039,
+    166,
+    1107,
+    253
+   ],
+   "fill_size_px": 130,
+   "frames": [
+    [
+     "stress",
+     0
+    ]
+   ],
+   "owner_layer": "hair",
+   "owner_ring_coverage": 0.141,
+   "owner_ratio": 0.0008,
+   "owner_disp_px": 42.1,
+   "owner_is_cover_trailing": false,
+   "material_std": 2.9,
+   "ring_std": 60.9,
+   "prompt_hint": "missing surface of the 'hair' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "hair"
+   }
+  },
+  {
+   "id": "hole_014",
+   "size_px": 47,
+   "tier": 1,
+   "bbox": [
+    1152,
+    273,
+    1172,
+    294
+   ],
+   "crop_box": [
+    1113,
+    253,
+    1185,
+    322
+   ],
+   "fill_size_px": 84,
+   "frames": [
+    [
+     "stress",
+     2
+    ],
+    [
+     "stress",
+     3
+    ]
+   ],
+   "owner_layer": "hair",
+   "owner_ring_coverage": 1.0,
+   "owner_ratio": 0.0007,
+   "owner_disp_px": 15.1,
+   "owner_is_cover_trailing": true,
+   "material_std": 8.3,
+   "ring_std": 8.3,
+   "prompt_hint": "missing surface of the 'hair' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "hair"
+   }
+  },
+  {
+   "id": "hole_015",
+   "size_px": 36,
+   "tier": 1,
+   "bbox": [
+    1015,
+    137,
+    1035,
+    148
+   ],
+   "crop_box": [
+    986,
+    133,
+    1093,
+    209
+   ],
+   "fill_size_px": 136,
+   "frames": [
+    [
+     "stress",
+     0
+    ],
+    [
+     "stress",
+     1
+    ]
+   ],
+   "owner_layer": "hair",
+   "owner_ring_coverage": 1.0,
+   "owner_ratio": 0.0006,
+   "owner_disp_px": 33.7,
+   "owner_is_cover_trailing": true,
+   "material_std": 9.6,
+   "ring_std": 9.6,
+   "prompt_hint": "missing surface of the 'hair' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": null,
+   "rejected": {
+    "reason": "fill left holes beyond residue on the full recount \u2014 region behaves as a background gap, not missing surface",
+    "hole_px_left": 5
+   }
+  },
+  {
+   "id": "hole_016",
+   "size_px": 26,
+   "tier": 1,
+   "bbox": [
+    1053,
+    430,
+    1064,
+    435
+   ],
+   "crop_box": [
+    1022,
+    405,
+    1092,
+    469
+   ],
+   "fill_size_px": 70,
+   "frames": [
+    [
+     "stress",
+     2
+    ]
+   ],
+   "owner_layer": "face",
+   "owner_ring_coverage": 0.69,
+   "owner_ratio": 0.0003,
+   "owner_disp_px": 5.2,
+   "owner_is_cover_trailing": true,
+   "material_std": 50.7,
+   "ring_std": 69.7,
+   "prompt_hint": "missing surface of the 'face' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "face"
+   }
+  },
+  {
+   "id": "hole_017",
+   "size_px": 21,
+   "tier": 1,
+   "bbox": [
+    874,
+    145,
+    887,
+    154
+   ],
+   "crop_box": [
+    875,
+    132,
+    948,
+    198
+   ],
+   "fill_size_px": 71,
+   "frames": [
+    [
+     "stress",
+     0
+    ]
+   ],
+   "owner_layer": "hair",
+   "owner_ring_coverage": 1.0,
+   "owner_ratio": 0.0003,
+   "owner_disp_px": 34.3,
+   "owner_is_cover_trailing": true,
+   "material_std": 7.1,
+   "ring_std": 7.1,
+   "prompt_hint": "missing surface of the 'hair' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "hair"
+   }
+  },
+  {
+   "id": "hole_018",
+   "size_px": 16,
+   "tier": 1,
+   "bbox": [
+    1036,
+    154,
+    1040,
+    162
+   ],
+   "crop_box": [
+    1036,
+    156,
+    1098,
+    223
+   ],
+   "fill_size_px": 45,
+   "frames": [
+    [
+     "stress",
+     0
+    ]
+   ],
+   "owner_layer": "hair",
+   "owner_ring_coverage": 0.764,
+   "owner_ratio": 0.0002,
+   "owner_disp_px": 43.2,
+   "owner_is_cover_trailing": true,
+   "material_std": 18.0,
+   "ring_std": 30.4,
+   "prompt_hint": "missing surface of the 'hair' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "hair"
+   }
+  },
+  {
+   "id": "hole_019",
+   "size_px": 16,
+   "tier": 1,
+   "bbox": [
+    1059,
+    202,
+    1068,
+    210
+   ],
+   "crop_box": [
+    1054,
+    205,
+    1121,
+    273
+   ],
+   "fill_size_px": 58,
+   "frames": [
+    [
+     "stress",
+     0
+    ]
+   ],
+   "owner_layer": "face",
+   "owner_ring_coverage": 0.966,
+   "owner_ratio": 0.0002,
+   "owner_disp_px": 40.9,
+   "owner_is_cover_trailing": true,
+   "material_std": 47.5,
+   "ring_std": 48.5,
+   "prompt_hint": "missing surface of the 'face' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "face"
+   }
+  },
+  {
+   "id": "hole_020",
+   "size_px": 16,
+   "tier": 1,
+   "bbox": [
+    1080,
+    217,
+    1086,
+    222
+   ],
+   "crop_box": [
+    1073,
+    222,
+    1138,
+    286
+   ],
+   "fill_size_px": 47,
+   "frames": [
+    [
+     "stress",
+     0
+    ]
+   ],
+   "owner_layer": "face",
+   "owner_ring_coverage": 0.087,
+   "owner_ratio": 0.0002,
+   "owner_disp_px": 41.4,
+   "owner_is_cover_trailing": false,
+   "material_std": 9.1,
+   "ring_std": 9.1,
+   "prompt_hint": "missing surface of the 'face' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "face"
+   }
+  },
+  {
+   "id": "hole_021",
+   "size_px": 15,
+   "tier": 1,
+   "bbox": [
+    1085,
+    215,
+    1092,
+    224
+   ],
+   "crop_box": [
+    1056,
+    207,
+    1122,
+    274
+   ],
+   "fill_size_px": 52,
+   "frames": [
+    [
+     "stress",
+     1
+    ]
+   ],
+   "owner_layer": "hair",
+   "owner_ring_coverage": 1.0,
+   "owner_ratio": 0.0002,
+   "owner_disp_px": 21.2,
+   "owner_is_cover_trailing": true,
+   "material_std": 13.7,
+   "ring_std": 13.7,
+   "prompt_hint": "missing surface of the 'hair' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "hair"
+   }
+  },
+  {
+   "id": "hole_022",
+   "size_px": 15,
+   "tier": 1,
+   "bbox": [
+    781,
+    725,
+    783,
+    735
+   ],
+   "crop_box": [
+    752,
+    702,
+    813,
+    771
+   ],
+   "fill_size_px": 47,
+   "frames": [
+    [
+     "stress",
+     0
+    ]
+   ],
+   "owner_layer": "torso",
+   "owner_ring_coverage": 1.0,
+   "owner_ratio": 0.0001,
+   "owner_disp_px": 5.9,
+   "owner_is_cover_trailing": true,
+   "material_std": 65.6,
+   "ring_std": 65.6,
+   "prompt_hint": "missing surface of the 'torso' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "torso"
+   }
+  },
+  {
+   "id": "hole_023",
+   "size_px": 14,
+   "tier": 1,
+   "bbox": [
+    1051,
+    145,
+    1063,
+    157
+   ],
+   "crop_box": [
+    993,
+    133,
+    1093,
+    209
+   ],
+   "fill_size_px": 75,
+   "frames": [
+    [
+     "stress",
+     1
+    ],
+    [
+     "stress",
+     2
+    ]
+   ],
+   "owner_layer": "hair",
+   "owner_ring_coverage": 1.0,
+   "owner_ratio": 0.0002,
+   "owner_disp_px": 23.2,
+   "owner_is_cover_trailing": true,
+   "material_std": 11.2,
+   "ring_std": 11.2,
+   "prompt_hint": "missing surface of the 'hair' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "hair"
+   }
+  },
+  {
+   "id": "hole_024",
+   "size_px": 11,
+   "tier": 1,
+   "bbox": [
+    1085,
+    159,
+    1091,
+    168
+   ],
+   "crop_box": [
+    1026,
+    141,
+    1092,
+    208
+   ],
+   "fill_size_px": 49,
+   "frames": [
+    [
+     "stress",
+     2
+    ]
+   ],
+   "owner_layer": "hair",
+   "owner_ring_coverage": 1.0,
+   "owner_ratio": 0.0002,
+   "owner_disp_px": 31.4,
+   "owner_is_cover_trailing": true,
+   "material_std": 11.4,
+   "ring_std": 11.4,
+   "prompt_hint": "missing surface of the 'hair' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "hair"
+   }
+  },
+  {
+   "id": "hole_025",
+   "size_px": 10,
+   "tier": 1,
+   "bbox": [
+    896,
+    178,
+    896,
+    187
+   ],
+   "crop_box": [
+    867,
+    171,
+    926,
+    238
+   ],
+   "fill_size_px": 33,
+   "frames": [
+    [
+     "stress",
+     1
+    ]
+   ],
+   "owner_layer": "hair",
+   "owner_ring_coverage": 0.709,
+   "owner_ratio": 0.0002,
+   "owner_disp_px": 22.3,
+   "owner_is_cover_trailing": true,
+   "material_std": 4.4,
+   "ring_std": 18.5,
+   "prompt_hint": "missing surface of the 'hair' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "hair"
+   }
+  },
+  {
+   "id": "hole_026",
+   "size_px": 10,
+   "tier": 1,
+   "bbox": [
+    1313,
+    641,
+    1322,
+    646
+   ],
+   "crop_box": [
+    1284,
+    620,
+    1352,
+    684
+   ],
+   "fill_size_px": 46,
+   "frames": [
+    [
+     "stress",
+     1
+    ]
+   ],
+   "owner_layer": "upper_arm_l",
+   "owner_ring_coverage": 1.0,
+   "owner_ratio": 0.0002,
+   "owner_disp_px": 8.5,
+   "owner_is_cover_trailing": true,
+   "material_std": 70.1,
+   "ring_std": 70.1,
+   "prompt_hint": "missing surface of the 'upper_arm_l' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "upper_arm_l"
+   }
+  },
+  {
+   "id": "hole_027",
+   "size_px": 9,
+   "tier": 1,
+   "bbox": [
+    1043,
+    142,
+    1049,
+    144
+   ],
+   "crop_box": [
+    998,
+    133,
+    1079,
+    197
+   ],
+   "fill_size_px": 46,
+   "frames": [
+    [
+     "stress",
+     1
+    ],
+    [
+     "stress",
+     3
+    ]
+   ],
+   "owner_layer": "hair",
+   "owner_ring_coverage": 1.0,
+   "owner_ratio": 0.0001,
+   "owner_disp_px": 24.2,
+   "owner_is_cover_trailing": true,
+   "material_std": 11.4,
+   "ring_std": 11.4,
+   "prompt_hint": "missing surface of the 'hair' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "hair"
+   }
+  },
+  {
+   "id": "hole_028",
+   "size_px": 9,
+   "tier": 1,
+   "bbox": [
+    1060,
+    146,
+    1064,
+    149
+   ],
+   "crop_box": [
+    1002,
+    133,
+    1079,
+    197
+   ],
+   "fill_size_px": 45,
+   "frames": [
+    [
+     "stress",
+     2
+    ],
+    [
+     "stress",
+     3
+    ]
+   ],
+   "owner_layer": "hair",
+   "owner_ring_coverage": 1.0,
+   "owner_ratio": 0.0001,
+   "owner_disp_px": 24.0,
+   "owner_is_cover_trailing": true,
+   "material_std": 12.8,
+   "ring_std": 12.8,
+   "prompt_hint": "missing surface of the 'hair' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "hair"
+   }
+  },
+  {
+   "id": "hole_029",
+   "size_px": 9,
+   "tier": 1,
+   "bbox": [
+    1070,
+    153,
+    1076,
+    160
+   ],
+   "crop_box": [
+    1026,
+    141,
+    1091,
+    207
+   ],
+   "fill_size_px": 43,
+   "frames": [
+    [
+     "stress",
+     3
+    ]
+   ],
+   "owner_layer": "hair",
+   "owner_ring_coverage": 1.0,
+   "owner_ratio": 0.0001,
+   "owner_disp_px": 23.1,
+   "owner_is_cover_trailing": true,
+   "material_std": 10.3,
+   "ring_std": 10.3,
+   "prompt_hint": "missing surface of the 'hair' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "hair"
+   }
+  },
+  {
+   "id": "hole_030",
+   "size_px": 8,
+   "tier": 1,
+   "bbox": [
+    902,
+    139,
+    906,
+    140
+   ],
+   "crop_box": [
+    904,
+    128,
+    968,
+    188
+   ],
+   "fill_size_px": 29,
+   "frames": [
+    [
+     "stress",
+     0
+    ]
+   ],
+   "owner_layer": "hair",
+   "owner_ring_coverage": 1.0,
+   "owner_ratio": 0.0001,
+   "owner_disp_px": 36.4,
+   "owner_is_cover_trailing": true,
+   "material_std": 8.6,
+   "ring_std": 8.6,
+   "prompt_hint": "missing surface of the 'hair' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "hair"
+   }
+  },
+  {
+   "id": "hole_031",
+   "size_px": 8,
+   "tier": 1,
+   "bbox": [
+    1076,
+    152,
+    1082,
+    157
+   ],
+   "crop_box": [
+    1017,
+    136,
+    1082,
+    199
+   ],
+   "fill_size_px": 36,
+   "frames": [
+    [
+     "stress",
+     2
+    ]
+   ],
+   "owner_layer": "hair",
+   "owner_ring_coverage": 1.0,
+   "owner_ratio": 0.0001,
+   "owner_disp_px": 32.6,
+   "owner_is_cover_trailing": true,
+   "material_std": 11.0,
+   "ring_std": 11.0,
+   "prompt_hint": "missing surface of the 'hair' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "hair"
+   }
+  },
+  {
+   "id": "hole_032",
+   "size_px": 8,
+   "tier": 1,
+   "bbox": [
+    1144,
+    270,
+    1149,
+    272
+   ],
+   "crop_box": [
+    1106,
+    251,
+    1170,
+    312
+   ],
+   "fill_size_px": 30,
+   "frames": [
+    [
+     "stress",
+     3
+    ]
+   ],
+   "owner_layer": "hair",
+   "owner_ring_coverage": 1.0,
+   "owner_ratio": 0.0001,
+   "owner_disp_px": 13.6,
+   "owner_is_cover_trailing": true,
+   "material_std": 5.3,
+   "ring_std": 5.3,
+   "prompt_hint": "missing surface of the 'hair' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "hair"
+   }
+  },
+  {
+   "id": "hole_033",
+   "size_px": 8,
+   "tier": 1,
+   "bbox": [
+    1152,
+    280,
+    1158,
+    282
+   ],
+   "crop_box": [
+    1105,
+    251,
+    1170,
+    312
+   ],
+   "fill_size_px": 32,
+   "frames": [
+    [
+     "stress",
+     2
+    ]
+   ],
+   "owner_layer": "hair",
+   "owner_ring_coverage": 0.979,
+   "owner_ratio": 0.0001,
+   "owner_disp_px": 17.8,
+   "owner_is_cover_trailing": true,
+   "material_std": 1.3,
+   "ring_std": 16.1,
+   "prompt_hint": "missing surface of the 'hair' part of a 2D game character; match the surrounding art style, colours and outlines exactly",
+   "filled": {
+    "mode": "tier1-cv2-baked",
+    "owner_layer": "hair"
+   }
+  }
+ ],
+ "voids": [
+  {
+   "size_px": 1778,
+   "bbox": [
+    906,
+    1430,
+    1026,
+    1454
+   ],
+   "reason": "no eligible owner \u2014 only the covering layer borders this region"
+  },
+  {
+   "size_px": 261,
+   "bbox": [
+    1026,
+    1411,
+    1049,
+    1434
+   ],
+   "reason": "no eligible owner \u2014 only the covering layer borders this region"
+  },
+  {
+   "size_px": 248,
+   "bbox": [
+    885,
+    1411,
+    907,
+    1434
+   ],
+   "reason": "no eligible owner \u2014 only the covering layer borders this region"
+  }
+ ],
+ "noise_px": 312
+}

@@ -1,0 +1,204 @@
+{
+ "order": [
+  "leg_L",
+  "leg_R",
+  "shoe_L",
+  "shoe_R",
+  "torso",
+  "neck",
+  "face",
+  "hair",
+  "ear_r",
+  "ear_l",
+  "upper_arm_A",
+  "forearm_A",
+  "hand_A",
+  "upper_arm_B",
+  "forearm_B",
+  "hand_B",
+  "eye_r",
+  "eye_l",
+  "face_variant_calm",
+  "face_variant_closed",
+  "face_variant_surprised",
+  "face_variant_smile"
+ ],
+ "parts": {
+  "leg_L": {
+   "pivot": [
+    740.5,
+    530.0
+   ],
+   "group": null,
+   "px": 71157
+  },
+  "leg_R": {
+   "pivot": [
+    1192.0,
+    530.0
+   ],
+   "group": null,
+   "px": 71001
+  },
+  "shoe_L": {
+   "pivot": [
+    360.0,
+    1091.0
+   ],
+   "group": null,
+   "px": 25388
+  },
+  "shoe_R": {
+   "pivot": [
+    1559.5,
+    1090.0
+   ],
+   "group": null,
+   "px": 25472
+  },
+  "torso": {
+   "pivot": [
+    966.5,
+    527.0
+   ],
+   "group": null,
+   "px": 203508
+  },
+  "neck": {
+   "pivot": [
+    352.0,
+    452.0
+   ],
+   "group": null,
+   "px": 4680
+  },
+  "face": {
+   "pivot": [
+    352.5,
+    464.0
+   ],
+   "group": "head",
+   "px": 77891
+  },
+  "hair": {
+   "pivot": [
+    348.0,
+    432.0
+   ],
+   "group": "head",
+   "px": 64884
+  },
+  "ear_r": {
+   "pivot": [
+    179.7,
+    321.8
+   ],
+   "group": "head",
+   "px": 3702
+  },
+  "ear_l": {
+   "pivot": [
+    523.4,
+    322.3
+   ],
+   "group": "head",
+   "px": 3371
+  },
+  "upper_arm_A": {
+   "pivot": [
+    421.0,
+    522.0
+   ],
+   "group": null,
+   "px": 39059
+  },
+  "forearm_A": {
+   "pivot": [
+    358.0,
+    729.0
+   ],
+   "group": null,
+   "px": 24782
+  },
+  "hand_A": {
+   "pivot": [
+    187.0,
+    898.0
+   ],
+   "group": null,
+   "px": 21025
+  },
+  "upper_arm_B": {
+   "pivot": [
+    1488.0,
+    167.0
+   ],
+   "group": null,
+   "px": 41201
+  },
+  "forearm_B": {
+   "pivot": [
+    1622.5,
+    520.0
+   ],
+   "group": null,
+   "px": 24118
+  },
+  "hand_B": {
+   "pivot": [
+    1746.0,
+    735.0
+   ],
+   "group": null,
+   "px": 20828
+  },
+  "eye_r": {
+   "pivot": [
+    275.3,
+    305.8
+   ],
+   "group": "head",
+   "px": 3017
+  },
+  "eye_l": {
+   "pivot": [
+    426.0,
+    305.5
+   ],
+   "group": "head",
+   "px": 2919
+  },
+  "face_variant_calm": {
+   "pivot": [
+    680.0,
+    1195.6
+   ],
+   "group": null,
+   "px": 9912
+  },
+  "face_variant_closed": {
+   "pivot": [
+    868.4,
+    1194.2
+   ],
+   "group": null,
+   "px": 9581
+  },
+  "face_variant_surprised": {
+   "pivot": [
+    1064.4,
+    1195.4
+   ],
+   "group": null,
+   "px": 9581
+  },
+  "face_variant_smile": {
+   "pivot": [
+    1252.1,
+    1195.5
+   ],
+   "group": null,
+   "px": 9937
+  }
+ }
+}
