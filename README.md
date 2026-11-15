@@ -28,3 +28,14 @@ the credit card, because the landlord takes bank transfer only.
   `inpaint_jobs/jobs.json` is the record).
 - `tools/` — gateway client and rig/blink build scripts used to produce the
   character assets.
+
+## State — Nov 15, 2026 (sync)
+
+This repo is the current source of truth for RENT DUE! as of Nov 15, 2026.
+
+- `game/` — Flutter web game, unchanged since Oct 24; passed the Nov 9 review (17/17 tests, release build). See `docs/GAME_REVIEW_2026-11-09.md`.
+- `docs/RENT_DUE_GDD_Draft_2026-11-14.md` — the GDD draft for the jam's development-funding consideration (shipped numbers throughout; §5 describes the shipped Reveal).
+- `assets/character/concepts/` — the locked V1 flat-vector art direction (Alex, props sheet, game-screen mock, expressions).
+- `assets/character/stageA_v1/` — Gate 1/2-approved V1 paper doll: source dolls, fixed doll (paint-outs applied), SAM masks (incl. derived hair mask 61), mask overlay, Gate 2 mapping, and the canonical despilled layer set. (Pre-despill raw layers excluded as regenerable intermediates.)
+- `assets/character/rig_alex_v1/` — the built V1 rig: 17 layers, blink painted, hole pass complete, bind containment verified locally. NOT yet wired into the game, and gateway `rig2d_validate` is still owed (laptop was asleep at build time). Inpaint job working files excluded; `jobs.json` records kept.
+- `tools/` — gateway client plus the v1 build/blink/despill scripts used to produce the above.
