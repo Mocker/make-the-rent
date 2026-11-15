@@ -192,6 +192,12 @@ class _GameScreenState extends State<GameScreen> {
     );
   }
 
+  bool get _isPayingPhase =>
+      phase == Phase.split ||
+      phase == Phase.dilemma ||
+      phase == Phase.shock ||
+      phase == Phase.cascade;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -210,22 +216,49 @@ class _GameScreenState extends State<GameScreen> {
             )),
         ],
       ),
-      body: SafeArea(
-        child: SingleChildScrollView(
-          padding: const EdgeInsets.all(16),
-          child: Center(
-            child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 560),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  _phaseWidget(),
-                  _footerWidget(),
-                ],
+      body: Stack(
+        children: [
+          if (_isPayingPhase) ...[
+            Positioned.fill(
+              child: Image.asset(
+                'assets/bg_pay.jpg',
+                fit: BoxFit.cover,
+              ),
+            ),
+            Positioned.fill(
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  color: const Color(0xFFFFFBF2).withValues(alpha: 0.82),
+                ),
+              ),
+            ),
+          ],
+          SafeArea(
+            child: SingleChildScrollView(
+              padding: const EdgeInsets.all(16),
+              child: Center(
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 560),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      if (_isPayingPhase) ...[
+                        BalancesBar(
+                          model: model,
+                          pendingTin: phase == Phase.split ? allocTin : 0,
+                          pendingJar: phase == Phase.split ? allocJar : 0,
+                        ),
+                        const SizedBox(height: 10),
+                      ],
+                      _phaseWidget(),
+                      _footerWidget(),
+                    ],
+                  ),
+                ),
               ),
             ),
           ),
-        ),
+        ],
       ),
     );
   }
@@ -407,7 +440,8 @@ class _GameScreenState extends State<GameScreen> {
     );
   }
 
-  Widget _eventShell(String title, String body, List<Widget> buttons) {
+  Widget _eventShell(
+      String title, String body, String imageAsset, List<Widget> buttons) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
@@ -416,9 +450,9 @@ class _GameScreenState extends State<GameScreen> {
                 const TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
         const SizedBox(height: 6),
         Text(body, style: const TextStyle(fontSize: 15)),
-        const SizedBox(height: 6),
-        RoomScene(model: model, compact: true),
         const SizedBox(height: 10),
+        EventImageCard(assetPath: imageAsset),
+        const SizedBox(height: 12),
         ...buttons,
       ],
     );
@@ -429,6 +463,7 @@ class _GameScreenState extends State<GameScreen> {
       'Friday night',
       'Friends are doing a group gift and a night out. It costs \$60. '
           'Going cheaper — \$25 — means saying so out loud. Skipping is free.',
+      'assets/event_night_out.jpg',
       [
         _bigButton('Go — \$60', () {
           model.applyNightOut(NightOutChoice.go);
@@ -451,6 +486,7 @@ class _GameScreenState extends State<GameScreen> {
       'A weekend side gig',
       'One weekend of event work: +\$80 pay, −\$30 costs. Net +\$50 to Week '
           'Cash. Or rest.',
+      'assets/event_gig.jpg',
       [
         _bigButton('Take it — +\$50', () {
           model.applyGig(true);
@@ -470,6 +506,7 @@ class _GameScreenState extends State<GameScreen> {
     return _eventShell(
       'The bike broke',
       'Alex\'s bike — the way to work — needs \$180 of repairs. Today.',
+      'assets/event_bike.jpg',
       [
         _bigButton(
             jarOk
@@ -509,6 +546,7 @@ class _GameScreenState extends State<GameScreen> {
       'The phone screen cracked',
       '${lateFeeNote.isNotEmpty ? '$lateFeeNote\n\n' : ''}'
           'Rent is due in 3 days. A new screen is \$90.',
+      'assets/event_phone.jpg',
       [
         _bigButton('Fix it from Week Cash — \$90', () {
           model.applyPhone(PhoneChoice.weekCash);
@@ -538,8 +576,8 @@ class _GameScreenState extends State<GameScreen> {
             'Short by \$${model.rentShortfall}. Money moves in this order: '
             'Buffer Jar, then Week Cash.'),
         const Text('Rent is paid by bank transfer — the card can\'t cover rent.'),
-        const SizedBox(height: 8),
-        RoomScene(model: model, compact: true),
+        const SizedBox(height: 10),
+        const EventImageCard(assetPath: 'assets/event_rent.jpg'),
         const SizedBox(height: 10),
         for (var i = 0; i < plan.length; i++)
           ListTile(
@@ -875,6 +913,121 @@ class RoomScene extends StatelessWidget {
               style: const TextStyle(fontSize: 12, color: Colors.black54),
             ),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Compact live balance strip shown during paying / allocation stages so the
+/// player always sees their Buffer Jar, Rent Tin, and Card totals.
+class BalancesBar extends StatelessWidget {
+  const BalancesBar({
+    super.key,
+    required this.model,
+    this.pendingTin = 0,
+    this.pendingJar = 0,
+  });
+
+  final GameModel model;
+  final int pendingTin;
+  final int pendingJar;
+
+  @override
+  Widget build(BuildContext context) {
+    final bandColor =
+        [Colors.blueGrey, Colors.amber, Colors.red][model.cardBand];
+    final bandWord = ['Cool', 'Warm', 'Hot'][model.cardBand];
+
+    Widget tile({
+      required String label,
+      required String value,
+      String? sub,
+      Color? tint,
+      Color? border,
+    }) {
+      return Expanded(
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+          decoration: BoxDecoration(
+            color: tint ?? Colors.white.withValues(alpha: 0.92),
+            border: Border.all(
+              color: border ?? Colors.brown.withValues(alpha: 0.25),
+              width: 1.5,
+            ),
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(label,
+                  style: const TextStyle(
+                      fontSize: 11,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.black54)),
+              const SizedBox(height: 2),
+              Text(value,
+                  style: const TextStyle(
+                      fontSize: 16, fontWeight: FontWeight.bold)),
+              if (sub != null)
+                Text(sub,
+                    style:
+                        const TextStyle(fontSize: 11, color: Colors.black54)),
+            ],
+          ),
+        ),
+      );
+    }
+
+    return Row(
+      children: [
+        tile(
+          label: 'Buffer Jar',
+          value: '\$${model.bufferJar}',
+          sub: pendingJar > 0
+              ? '+\$$pendingJar this week'
+              : 'level ${model.jarLevel}/5',
+          tint: const Color(0xFFFFF8E6).withValues(alpha: 0.95),
+          border: Colors.amber.shade700.withValues(alpha: 0.45),
+        ),
+        const SizedBox(width: 8),
+        tile(
+          label: 'Rent Tin',
+          value: '\$${model.rentTin}',
+          sub: pendingTin > 0
+              ? '+\$$pendingTin · of \$${GameModel.rentDue}'
+              : 'of \$${GameModel.rentDue} due',
+          tint: const Color(0xFFF1F8F5).withValues(alpha: 0.95),
+          border: Colors.teal.shade600.withValues(alpha: 0.45),
+        ),
+        const SizedBox(width: 8),
+        tile(
+          label: 'Card',
+          value: '\$${model.cardBalance}',
+          sub: '$bandWord · limit \$${GameModel.cardLimit}',
+          tint: bandColor.withValues(alpha: 0.14),
+          border: bandColor.withValues(alpha: 0.75),
+        ),
+      ],
+    );
+  }
+}
+
+/// Framed 16:9 static event illustration shown during playthrough events.
+class EventImageCard extends StatelessWidget {
+  const EventImageCard({super.key, required this.assetPath});
+
+  final String assetPath;
+
+  @override
+  Widget build(BuildContext context) {
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(12),
+      child: AspectRatio(
+        aspectRatio: 16 / 9,
+        child: Image.asset(
+          assetPath,
+          fit: BoxFit.cover,
         ),
       ),
     );

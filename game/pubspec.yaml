@@ -59,6 +59,12 @@ flutter:
 
   assets:
     - assets/alex.png
+    - assets/bg_pay.jpg
+    - assets/event_night_out.jpg
+    - assets/event_bike.jpg
+    - assets/event_gig.jpg
+    - assets/event_phone.jpg
+    - assets/event_rent.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
